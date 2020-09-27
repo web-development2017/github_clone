@@ -1,0 +1,107 @@
+.text-white {color: $default-text-color}
+
+/*
+---
+NAV
+---
+*/
+// .navbar-toggler-icon {
+//     // background-image: url("/hamburger.svg");
+//     // color:white;
+// }
+.navbar-dark .navbar-nav .nav-link {color: $default-text-color}
+nav{
+    ul a{font-size:16px;}
+    a{color: $default-text-color}
+    a:hover{color: $dropdown-a-hover-color;}
+}
+.nav-link{padding: 16px 0 16px 0}
+#nav-custom{background-color: $nav-background-color;}
+
+.octicon {fill: currentColor;}
+
+.offcanvas-header{ display:none; }
+
+/*
+-------
+BUTTONS
+-------
+*/
+.btn{font-size:16px}
+.btn-outline-custom {
+    color: $default-text-color;
+    border: 1px solid $btn-custom-border-color;
+}
+.btn-outline-custom:hover {
+    color: $default-text-color;
+    opacity: .75;
+}
+#signIn{padding-right: 16px;}
+.btn-dark{
+    background-color: $nav-background-color;
+    border: none;
+}
+
+/*
+-----
+FORMS
+-----
+*/
+.form-control{
+    background-color: $form-control-bkgnd-color;
+    border: none
+}
+/* https://stackoverflow.com/questions/51299051/placeholder-color-change-in-bootstrap */
+.form-control::-webkit-input-placeholder {
+    color: $form-control-txt-color;
+}
+
+/*
+---------
+DROPDOWNS
+---------
+*/
+.dropdown-menu{
+    /* display: none; */
+	width: 300px;
+	border-radius: 6px;
+    padding: 24px;
+
+    animation: dropdown-display .4s cubic-bezier(.73,.005,.22,1);
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(0.73, 0.005, 0.22, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: dropdown-display;
+}
+@keyframes dropdown-display{
+    0% {
+        opacity: 0;
+        transform: scale(.98) translateY(-.6em);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+.dropdown-item{
+    padding-left: 0;
+    font-size: 14px;
+    color: $dropdown-item-txt-color;
+}
+.dropdown-header{font-weight: 700;}
+.dropdown-item:hover{color: $dropdown-item-hover-color}
+.dropdown-menu {
+    h4{
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+        font-weight: 400;
+        font-size:14px;
+        color: #6a737d;
+    }
+}
+hr{
+    width: 100%; color:#444d56; margin: 5px;
+}

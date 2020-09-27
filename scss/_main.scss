@@ -1,0 +1,73 @@
+.jumbotron-codelines {
+    display: block;
+    height:100%;
+    width:100%;
+    color: hsla(0,0%,100%,.6);
+    background: url("/simple-codelines.svg"), #2b3137;
+    background-position: center 10%;
+    background-size: cover;
+    .needAname{
+        display: block;
+        height: 100%;
+        width:100%;
+        max-width: 1012px;
+        .container{
+            height: 100%;
+            line-height: 1.5;
+            max-width: 1012px;
+                h1{
+                    font-size: 64px;
+                    font-weight: 500;
+                    line-height: 1!important;
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: hsla(0,0%,100%,.6);
+                    line-height: 1.5;
+                }
+                .rounded-1 {
+                    border-radius: 6px!important;
+                }
+                .bg-gray-light {
+                    background-color: #fafbfc!important;
+                }
+                .text-grey-dark{color: #24292e!important;}
+                .h5{
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+                .form-control{
+                    border: 1px solid #ced4da;
+                }
+                .main-form{
+                    p{font-size: 12px;}
+                    .form-control-note {
+                        margin-top: 5px;
+                        margin-bottom: 0;
+                        font-size: 12px;
+                        color: #6a737d;
+                    }
+                }
+                input{
+                    min-height: 46px;
+                    padding: 10px;
+                    font-size: 16px;
+                }
+                .btn-success{
+                    background-color: #2ebc4f;
+                    width:100%;
+                }
+                
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+    .jumbotron-codelines {
+        .needAname{
+            .container{
+                h1{font-size: 48px;}
+            }
+        }
+    }
+}

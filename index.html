@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <!-- Custom Style -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>GitHub Clone</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-xl" id="nav-custom">
+        <a class="navbar-brand py-0" href="#">
+          <svg height="32" class="octicon octicon-mark-github text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+        </a>
+        <form class="form-inline my-0 my-sm-0 my-lg-0 d-xl-none ml-auto mr-3">
+          <button class="btn btn-outline-custom pt-sm-1 pb-sm-1 pl-sm-2 pr-sm-2 my-0 my-sm-0" type="submit">Sign up</button>
+        </form>
+        <button class="navbar-toggler pt-sm-0 pb-sm-0" type="button" data-trigger="#main_nav">              
+          <svg height="24" class="octicon octicon-three-bars text-white" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
+        </button>
+            
+        <div class="navbar-collapse" id="main_nav">
+          <div class="offcanvas-header">  
+            <button class="btn btn-close">
+              <svg height="24" class="octicon octicon-x text-gray" viewBox="0 0 24 24" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path></svg>
+            </button>
+          </div>
+          <ul class="navbar-nav mb-4 mb-xl-0 mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Why GitHub?
+              </a>
+              
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-header dropdown-item" href="#">Features</a>
+                  <a class="dropdown-item" href="#">Code review</a>
+                  <a class="dropdown-item" href="#">Project management</a>
+                  <a class="dropdown-item" href="#">Integrations</a>
+                  <a href="#" class="dropdown-item">Actions</a>
+                  <a href="#" class="dropdown-item">Packages</a>
+                  <a href="#" class="dropdown-item">Security</a>
+                  <a href="#" class="dropdown-item">Team management</a>
+                  <a href="#" class="dropdown-item">Hosting</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-header dropdown-item">Customer stories</a>
+                  <a href="#" class="dropdown-header dropdown-item">Security</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Enterprise</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a href="" class="dropdown-header dropdown-item">Explore GitHub</a>
+                <div class="dropdown-divider"></div>
+                <h4>Learn and contribute</h4>
+                <a class="dropdown-item" href="#">Topics</a>
+                <a class="dropdown-item" href="#">Collections</a>
+                <a href="#" class="dropdown-item">Trending</a>
+                <a href="#" class="dropdown-item">Learning lab</a>
+                <a href="#" class="dropdown-item">Open sourse guides</a>
+                <div class="dropdown-divider"></div>
+                <h4>Connect with others</h4>
+                <a href="#" class="dropdown-item">Events</a>
+                <a href="#" class="dropdown-item">Comunnity forum</a>
+                <a href="#" class="dropdown-item">GitHub Education</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Marketplace</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pricing
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <a class="dropdown-header dropdown-item" href="#">Plans</a>
+                  <a class="dropdown-item" href="#">Compare plans</a>
+                  <a class="dropdown-item" href="#">Contact sales</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-header dropdown-item">Non profit</a>
+                  <a href="#" class="dropdown-header dropdown-item">Education</a>
+              </div>
+            </li>
+          </ul>
+
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 mb-3 mb-xl-0" type="search" placeholder="Search GitHub">
+            <button class="btn btn-dark my-2 my-sm-0" id="signIn" type="submit">Sign In</button>
+            <button class="btn btn-outline-custom my-2 my-sm-0" id="mobileSignUp" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="jumbotron-codelines py-5">
+        <div class="needAname px-3 ml-auto mr-auto">
+          <div class="container d-flex flex-wrap align-items-center px-0">
+            <div class="col-md-6 col-sm-12 px-0 px-md-4 text-center text-md-left">
+              <h1 class="text-white mb-3">Built for developers</h1>
+              <p class="mb-4">GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside 50 million developers.</p>
+            </div>
+
+            <div class="d-none d-sm-block col-sm-8 col-md-6 px-4 mx-auto">
+              <div class="rounded-1 p-4 text-gray bg-gray-light">
+                <form class="main-form text-grey-dark">
+                  <div class="form-group">
+                    <label class="h5"  for="exampleUsername">Username</label>
+                    <input type="email" class="form-control" id="exampleUsername" aria-describedby="emailHelp">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="h5"  for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  
+                  <p class="text-grey-dark">Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter. Learn more.</p>
+                      
+                  <button type="submit" class="btn btn-success py-3 px-4 my-3">Sign up for GitHub</button>
+                  <p class="form-control-note">By clicking “Sign up for GitHub”, you agree to our Terms of Service and Privacy Statement. We’ll occasionally send you account related emails.</p>
+                </form>
+              </div>
+            </div>
+          </div>              
+        </div>
+      </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+
+    <!-- Custom js -->
+    <script>
+        $("[data-trigger]").on("click", function(){
+          console.log("Clicked");
+          var trigger_id = $(this).attr('data-trigger');
+          $(trigger_id).toggleClass("show");
+          // // $('body').toggleClass("offcanvas-active");
+        });
+  
+        // close button 
+        $(".btn-close").click(function(e){
+            $(".navbar-collapse").removeClass("show");
+            // $("body").removeClass("offcanvas-active");
+        }); 
+    </script>
+
+    <!-- <script>
+      // https://stackoverflow.com/questions/17237935/jquery-execute-scripts-based-on-screen-size
+      if($(window).width() >= 991){
+        /* Bootstrap Dropdown with Hover */
+        /* https://stackoverflow.com/questions/16214326/bootstrap-dropdown-with-hover */
+        $('.dropdown').hover(function(){ 
+          $('.dropdown-toggle', this).trigger('click'); 
+        });
+      }
+    </script> -->
+</body>
+</html>

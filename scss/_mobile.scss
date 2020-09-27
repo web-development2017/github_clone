@@ -1,0 +1,106 @@
+@media only screen and (max-width: 1200px) {
+    
+    // .navbar{padding-right:0}
+    .text-gray {
+        color: $dropdown-item-txt-color!important;
+    }
+    .offcanvas-header{
+        display: flex;
+        margin: 0px; 
+        padding: 16px;
+        background-color: #fafbfc!important;
+        border-bottom: 1px solid #e1e4e8!important;
+    }
+/*
+-------
+BUTTONS
+-------
+*/
+    #signIn{
+        background-color: $default-text-color!important;
+        color: #444d56;
+    }
+    #mobileSignUp{
+        color: #444d56;
+    }
+    .btn-close{
+        margin-left:auto;
+        padding: 0;
+    }
+    .btn{font-size:14px}
+/*
+---
+NAV
+---
+*/
+    nav a{color: #444d56;}
+    .nav-item{
+        border-bottom: 1px solid $btn-custom-border-color!important;
+        border-bottom-width: 1px !important;
+        border-bottom-style: solid !important;
+        border-bottom-color: rgb(225, 228, 232)!important;
+    }
+    .navbar-collapse {
+        color:#444d56;
+        background-color: $default-text-color;
+
+        position: fixed;
+        top:0; 
+        bottom: 0;
+        right:0;
+    
+        overflow-y: auto;
+        visibility: hidden;
+        z-index: 100;
+
+        width:300px;
+    }
+    .navbar-collapse.show {
+        visibility: visible;
+    }
+    .navbar-nav{padding: 0 16px 0 16px;}
+
+    .navbar-dark .navbar-nav .nav-link{color: #444d56;}
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {color: #444d56;}
+
+    #navbarDropdown:hover {color: #444d56;}
+    #navbarDropdown1:hover {color: #444d56;}
+    #navbarDropdown2:hover {color: #444d56;}
+    #navbarDropdown:not(:hover){color: #444d56;}
+    #navbarDropdown1:not(:hover){color: #444d56;}
+    #navbarDropdown2:not(:hover){color: #444d56;}
+/*
+---------
+DROPDOWNS
+---------
+*/
+    .dropdown-menu{
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+
+        width: auto;
+        border: none;
+        padding: 0px;
+    }
+    .dropdown-toggle::after {float: right;}
+/*
+-----
+FORMS
+-----
+*/
+    .navbar-collapse{
+        form{
+            padding: 0px 16px 0px 16px;
+            .form-control{
+                border: 1px solid #eaecef;
+            }
+        }
+        .form-control::-webkit-input-placeholder {
+            color: #444d56;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+body {color: #fff;}
+/* Top Navbar */
+.text-white {color:#fff;}
+.octicon {fill: currentColor;}
+.navbar-dark .navbar-nav .nav-link {color:#fff}
+#nav-custom{background-color: #24292e!important;}
+
+.btn-outline-custom {color: #fff;border: 1px solid #e1e4e8;}
+.btn-outline-custom:hover {color: #fff; opacity: .75;}
+:focus {
+    outline: -webkit-focus-ring-color none;
+}
+.form-control{background-color: hsla(0,0%,100%,.125); border: none}
+
+/* https://stackoverflow.com/questions/51299051/placeholder-color-change-in-bootstrap */
+.form-control::-webkit-input-placeholder {
+    color: hsla(0,0%,100%,.7);
+}
+
+#navbarDropdown:hover {color: rgba(255,255,255,.75);}
+#navbarDropdown1:hover {color: rgba(255,255,255,.75);}
+#navbarDropdown2:hover {color: rgba(255,255,255,.75);}
+#navbarDropdown:not(:hover){color: #fff;}
+#navbarDropdown1:not(:hover){color: #fff;}
+#navbarDropdown2:not(:hover){color: #fff;}
+
+.dropdown-menu{
+    /* display: none; */
+	width: 300px;
+	border-radius: 6px;
+    padding: 24px;
+
+    animation: dropdown-display .4s cubic-bezier(.73,.005,.22,1);
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(0.73, 0.005, 0.22, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: dropdown-display;
+}
+.dropdown-item{
+    padding-left: 0;
+    font-size: 14px;
+    color: #586069;
+}
+@keyframes dropdown-display{
+    0% {
+        opacity: 0;
+        transform: scale(.98) translateY(-.6em);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+#signIn{padding-right: 16px;}
+.btn-dark{background-color: #24292e; border: none;}
+.nav-link{padding: 16px 0 16px 0}
+.dropdown-header{font-weight: 700;}
+.dropdown-item:hover{color: #0366d6}
+h4{
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-weight: 400;
+    font-size:14px;
+    color: #6a737d;
+}
+ul a{font-size:16px;}
+
+@media only screen and (max-width: 991px) {
+    .navbar-collapse {
+        color:#444d56;
+        background-color: #fff;
+    }
+    
+    /* @ */
+    /* NEED TO CHANGE WIDTH OF BURGER BAR MENU */
+    /* @ */
+
+    .navbar-nav{padding: 16px}
+    .navbar-dark .navbar-nav .nav-link{color: #444d56;}
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {color: #444d56;}
+
+    #navbarDropdown:hover {color: #444d56;}
+    #navbarDropdown1:hover {color: #444d56;}
+    #navbarDropdown2:hover {color: #444d56;}
+    #navbarDropdown:not(:hover){color: #444d56;}
+    #navbarDropdown1:not(:hover){color: #444d56;}
+    #navbarDropdown2:not(:hover){color: #444d56;}
+
+    .dropdown-menu{
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+
+        width: auto;
+        border: none;
+        padding: 0px;
+    }
+    .dropdown-toggle::after {float: right;}
+    
+ }
+/* End of Top Navbar */
+hr{
+    width: 100%; color:#444d56; margin: 5px;
+}
